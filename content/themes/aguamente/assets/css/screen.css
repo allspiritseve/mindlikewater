@@ -474,6 +474,7 @@ margin on the iframe, cause it breaks stuff. */
 
 /* The details of your blog. Defined in ghost/settings/ */
 .blog-title {
+  position: absolute;
     font-size: 6rem;
     letter-spacing: -1px;
     line-height: .85em;
@@ -482,6 +483,41 @@ margin on the iframe, cause it breaks stuff. */
     text-shadow: 0 1px 6px rgba(0,0,0,0.1);
     text-transform: uppercase;
     word-spacing: 999px;
+}
+
+.blog-title a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.blog-title a .off {
+  transition: opacity 0.2s linear 1s;
+}
+
+.blog-title a .on {
+  transition: opacity 0.2s linear 1s;
+}
+
+.blog-title a .on,
+.blog-title a:hover .off {
+  opacity: 0;
+}
+
+.blog-title a .off,
+.blog-title a:hover .on {
+  opacity: 1;
+}
+
+.hover-title {
+  position: relative;
+  height: .85em;
+}
+
+.hover-title .off,
+.hover-title .on {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .blog-description {
