@@ -449,14 +449,14 @@ margin on the iframe, cause it breaks stuff. */
 
 /* Big cover image on the home page */
 .site-head {
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 30%;
-    text-align: left;
-    color: #fff;
-    background-color: #303538;
+  text-align: left;
+  padding: 20px 0;
+}
+
+.site-head-content {
+  width: 80%;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .blog-logo {
@@ -474,38 +474,22 @@ margin on the iframe, cause it breaks stuff. */
 
 /* The details of your blog. Defined in ghost/settings/ */
 .blog-title {
-  position: absolute;
-    font-size: 6rem;
-    letter-spacing: -1px;
-    line-height: .85em;
-    font-weight: bold;
-    font-family: 'Open Sans', sans-serif;
-    text-shadow: 0 1px 6px rgba(0,0,0,0.1);
-    text-transform: uppercase;
-    word-spacing: 999px;
+  font-size: 40px;
+  line-height: 1;
+  font-weight: bold;
+  font-family: 'Noto Serif', serif;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.1);
+  text-transform: uppercase;
+  margin: 0;
 }
 
 .blog-title a {
   text-decoration: none;
-  color: #fff;
+  color: #303538;
 }
 
-.blog-title a .off {
-  transition: opacity 0.2s linear 1s;
-}
-
-.blog-title a .on {
-  transition: opacity 0.2s linear 1s;
-}
-
-.blog-title a .on,
-.blog-title a:hover .off {
-  opacity: 0;
-}
-
-.blog-title a .off,
-.blog-title a:hover .on {
-  opacity: 1;
+.blog-title a:hover {
+  color: #48b;
 }
 
 .hover-title {
@@ -531,7 +515,6 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .content {
-  padding-left: 30%;
 }
 
 /* Every post, on every page, gets this style on its <article> tag */
@@ -889,7 +872,7 @@ margin on the iframe, cause it breaks stuff. */
 
 .site-footer {
     position: relative;
-    margin: 8rem 0 0 30%;
+    margin: 8rem 0 0 0;
     padding: 4rem 0;
     border-top: #EBF2F6 1px solid;
     font-family: 'Open Sans', sans-serif;
@@ -1010,20 +993,6 @@ margin on the iframe, cause it breaks stuff. */
         margin-left: 0;
     }
 
-    .site-head {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        height: auto;
-        min-height: 240px;
-        padding: 15% 0;
-    }
-
-    .blog-title {
-        font-size: 4rem;
-        letter-spacing: -1px;
-    }
-
     .blog-description {
         font-size: 1.7rem;
         line-height: 1.5em;
@@ -1067,6 +1036,10 @@ margin on the iframe, cause it breaks stuff. */
 
 
 @media only screen and (max-width: 500px) {
+  .site-head-content {
+    width: auto;
+    margin: 0 16px;
+  }
 
     .blog-logo img {
         max-height: 80px;
@@ -1087,14 +1060,6 @@ margin on the iframe, cause it breaks stuff. */
         line-height: 1.6em;
     }
 
-    .site-head {
-        padding: 10% 0;
-    }
-
-    .blog-title {
-        font-size: 3rem;
-    }
-
     .blog-description {
         font-size: 1.5rem;
     }
@@ -1103,7 +1068,6 @@ margin on the iframe, cause it breaks stuff. */
     h1, h2 {
         font-size: 3rem;
         line-height: 1.1em;
-        letter-spacing: -1px;
     }
 
     h3 {
