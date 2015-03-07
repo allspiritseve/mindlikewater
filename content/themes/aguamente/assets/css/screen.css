@@ -465,11 +465,7 @@ margin on the iframe, cause it breaks stuff. */
 
 /* Yo-logo. Yolo-go. Upload one in ghost/settings/ */
 .blog-logo img {
-    display: block;
-    max-height: 100px;
-    width: auto;
-    margin: 0 auto;
-    line-height: 0;
+  vertical-align: text-top;
 }
 
 /* The details of your blog. Defined in ghost/settings/ */
@@ -758,15 +754,6 @@ margin on the iframe, cause it breaks stuff. */
     padding-bottom: 5rem;
 }
 
-.archive-template .site-head a {
-    color: #fff;
-}
-
-.archive-template .blog-logo {
-    display: block;
-    margin-top: 5rem;
-}
-
 .tag-archive-header {
     padding: 20px 0;
     text-align: center;
@@ -1040,10 +1027,6 @@ margin on the iframe, cause it breaks stuff. */
     width: auto;
     margin: 0 16px;
   }
-
-    .blog-logo img {
-        max-height: 80px;
-    }
 
     .inner,
     .pagination {
