@@ -1,7 +1,10 @@
 <header class="site-head" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
   <div class="site-head-content">
-    {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
-    <h1 class="blog-title"><a href="{{@blog.url}}">Mind Like Water</a></h1>
+    <h1 class="blog-title">
+      {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Mind Like Water logo" /></a>{{/if}}
+      <a class="blog-logo" href="{{@blog.url}}"><img src="/assets/images/logo@2x.png" width="55px" height="55px" alt="Mind Like Water logo"></a>
+      <a href="{{@blog.url}}">Mind Like Water</a>
+    </h1>
     <h2 class="blog-description">{{@blog.description}}</h2>
   </div>
 </header>
