@@ -9,6 +9,8 @@
             <h1>{{tag.name}}</h1>
         </header>
 
+        <a class="subscribe icon-feed" href="{{tag.url}}/rss"><span class="tooltip">Subscribe to {{tag.name}} RSS feed</span></a>
+
     {{! Each post will be output using this markup }}
     {{#foreach posts}}
 
